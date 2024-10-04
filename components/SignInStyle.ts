@@ -4,32 +4,15 @@ const styles = StyleSheet.create({
     SignInContainer: {
        
     },
-    circle: {
-        backgroundColor: '#AD58E1',
-        height: 140,
-        width: 140,
-        borderRadius: 80,
-        opacity: 0.46,
-        marginLeft: -70,
-        marginTop: 0,
-    },
-    circle2: {
-        backgroundColor: '#AD58E1',
-        height: 150,
-        width: 150,
-        borderRadius: 80,
-        opacity: 0.46,
-        marginLeft: 0,
-        marginTop: -200,
-    },
     button: {
         backgroundColor: '#8C54B8',
         color: '#FFFFFF',
-        width: 80,
-        height: 30,
+        width: 82,
+        height: 32,
         borderRadius: 5,
         justifyContent: 'center',
         marginBottom: 10,
+        zIndex: 9,
     },
     buttonText: {
         fontSize: 13,
@@ -39,14 +22,14 @@ const styles = StyleSheet.create({
         color: '#FFFFFF'
     },
     ImFirst: {
-        marginTop: -200,
-        marginLeft: 100,
-        width: 300,
-        height: 350,
-        zIndex: -1,
+        marginTop: -280,
+        marginLeft: 80,
+        width: 380,
+        height: 450,
+        zIndex: 4,
     },
     SignInArea: {
-        paddingTop: 130,
+        paddingTop: 100,
         justifyContent: 'center',
         alignContent: 'center',
         alignItems: 'center',
@@ -66,8 +49,8 @@ const styles = StyleSheet.create({
         opacity: 0.8,
     },
     SignInAreaBottom: {
-        marginTop: -116,
-        marginLeft: 42,
+        marginTop: -134,
+        marginLeft: 45,
     },
     SignInAreaBottom2: {
         marginTop: 10,

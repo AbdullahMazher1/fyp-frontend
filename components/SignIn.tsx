@@ -3,34 +3,13 @@ import { View, TextInput, Text, Image, ActivityIndicator, TouchableOpacity } fro
 import * as Font from 'expo-font';
 import styles from './SignInStyle';
 import styles1 from './FirstScreenStyle';
-
-const loadFonts = async () => {
-    await Font.loadAsync({
-        'Poppins-Regular': require('../assets/fonts/Poppins-Regular.ttf'),
-        'Poppins-Bold': require('../assets/fonts/Poppins-Bold.ttf'),
-        'Inter': require('../assets/fonts/Inter_28pt-Regular.ttf'),
-    });
-};
+import  Circles from './Circles'
 
 const SignInScreen = () => {
-    const [fontsLoaded, setFontsLoaded] = useState(false);
-
-    useEffect(() => {
-        loadFonts().then(() => setFontsLoaded(true));
-    }, []);
-
-    if (!fontsLoaded) {
-        return <ActivityIndicator size="large" color="#0000ff" />;
-    }
-
+    
     return (
         <View style={styles.SignInContainer}>
-            <View>
-                <View style={styles.circle}>
-                </View>
-                <View style={styles.circle2}>
-                </View>
-            </View>
+            <Circles/>
             <View style={styles.SignInArea}>
                 <Text style={styles1.text}>
                     <Text style={styles1.text1}>Welcome </Text> Back
