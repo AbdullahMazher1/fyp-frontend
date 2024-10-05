@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import FirstScreen from '../components/FirstScreen';
-import SignUp from '../components/SignUp';
-import SignInScreen from '../components/SignIn';
+import { View } from 'react-native';
+import FirstScreen from './FirstScreen';
 
-export default function Index() {
+const Index = () => {
   return (
-    <View>
-      <SignUp/>
+    <View >
+      <FirstScreen />
     </View>
   );
-}
+};
+
+export default Index;

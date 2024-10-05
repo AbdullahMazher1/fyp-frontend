@@ -6,6 +6,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     },
+    box: {
+        marginTop: 25,
+        borderColor: 'grey',
+        borderWidth:  1,
+        borderRadius: 4,
+    },
     text11: {
         margin: 10,
         color: '#8C54B8',
@@ -14,9 +20,11 @@ const styles = StyleSheet.create({
     },
     googleButton: {
         flexDirection: 'row',
-        marginTop: 20,
+        paddingTop: 0,
+        paddingBottom: 0,
+        paddingLeft: 10,
+        paddingRight: 10,
         backgroundColor: 'transparent', 
-        padding: 10,
         borderRadius: 5,
         alignItems: 'center',
         marginVertical: 10,

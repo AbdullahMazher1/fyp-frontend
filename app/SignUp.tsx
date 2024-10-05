@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { View, TextInput, Text, Image, ActivityIndicator, TouchableOpacity } from 'react-native';
-import Circles from './Circles'
+import React from 'react';
+import { View, TextInput, Text, Image, TouchableOpacity } from 'react-native';
+import Circles from '../components/Circles';
 import styles from './SignUpStyles';
 import styles2 from './SignInStyle';
 import styles1 from './FirstScreenStyle';
+import { router } from 'expo-router';
 
 const SignUp = () => {
     return (
@@ -35,20 +36,25 @@ const SignUp = () => {
                     source={require('../assets/images/03.png')}
                     resizeMode="cover"
                 />
-                <TouchableOpacity
-                    style={styles.button}
-                >
+                <TouchableOpacity style={styles.button}>
                     <Text style={styles1.buttonText}>Get Registered</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.googleButton}>
-                    <Image 
-                        source={require('../assets/images/04.png')} 
-                        style={styles.googleIcon}
-                    />
-                    <Text style={styles.googleButtonText}>Continue with Google</Text>
-                </TouchableOpacity>
+                <Text style={styles1.text01}>
+                    Already have an account?
+                    <Text onPress={() => router.push("./SignIn")} style={styles.text11}> Sign in</Text>
+                </Text>
+                <View style={styles.box}>
+                    <TouchableOpacity style={styles.googleButton}>
+                        <Image
+                            source={require('../assets/images/04.png')}
+                            style={styles.googleIcon}
+                        />
+                        <Text style={styles.googleButtonText}>Continue with Google</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </View>
-    )
+    );
 };
+
 export default SignUp;
